@@ -227,6 +227,12 @@ body {
     font-size: 12px;
 }
 
+.absol img {
+    position: absolute;
+    left: 322px;
+    top: 113px;
+}
+
 
 /* need loader to work normal */
 
