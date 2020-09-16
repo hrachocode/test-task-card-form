@@ -51,7 +51,9 @@ body {
 
 .main__information__to__pay__count {
     padding-top: 23px;
+    width: 300px;
     display: flex;
+    justify-content: space-between;
 }
 
 .account {
@@ -64,10 +66,13 @@ body {
 
 .main__information__to__pay__value {
     padding-top: 11px;
+    width: 300px;
     display: flex;
+    justify-content: space-between;
 }
 
 .bank__card__info {
+    position: relative;
     padding-top: 35px;
 }
 
@@ -77,7 +82,9 @@ body {
     padding-bottom: 21px;
 }
 
+/* ------------------------------------------------------------------ */
 .bank__card__info__input {
+    position: absolute;
     font-size: 16px;
     padding-top: 21px;
     width: 351px;
@@ -85,7 +92,7 @@ body {
     border: 0.5px solid #8494AB;
     border-radius: 5%;
 
-    background-color: #cdd5e0;
+    background-color: #F7F8F8;
     color: #8494AB;
 
     
@@ -93,11 +100,7 @@ body {
 }
 
 .bank__card__info__input__container {
-    width: 351px;
-    height: 237px;
     padding-left: 14px;
-    position: relative;
-    z-index: 2;
 }
 
 .input__areas {
@@ -151,10 +154,10 @@ body {
     width: 320px;
 }
 
-
 .to__pay {
     width: 174px;
     height: 41px;
+    padding-top: 271px;
 }
 
 .to__pay__paying {
@@ -165,15 +168,16 @@ body {
 
 
 
-
+/* ------------------------------------------------------------------ */
 .absol {
     position: absolute;
     width: 372px;
     height: 237px;
-    top: 228px;
+    top: 98px;
     z-index: 1;
 
     border: 0.5px solid #8494AB;
+    background-color: #F7F8F8;
     border-radius: 5%;
     right: 46px;
 }
@@ -183,7 +187,7 @@ body {
     height: 42px;
     background-color: #E4E9EE;
     margin-top: 26px;
-    margin-left: 101px;
+    margin-left: 99px;
 }
 
 .code {
@@ -222,3 +226,11 @@ body {
 
     font-size: 12px;
 }
+
+
+/* need loader to work normal */
+
+/* @font-face {
+    font-family: myFont;
+    src: url(./Fonts/OpenSans-Bold.ttf);
+} */
