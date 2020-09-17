@@ -1,3 +1,4 @@
 import './assets/index.scss';
-import './assets/cod/cod'
 
+document.querySelector('#logo')
+      .addEventListener('click', () => document.querySelector('#side').classList.toggle('custom-height'));
