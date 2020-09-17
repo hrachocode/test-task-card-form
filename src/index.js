@@ -1,1 +1,3 @@
-import './assets/index.css';
+import './assets/index.scss';
+import './assets/cod/cod'
+

@@ -26,6 +26,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2"
   }
 }

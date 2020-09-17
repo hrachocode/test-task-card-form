@@ -10,146 +10,174 @@
 </head>
 
 <body class="page">
-  <!-- Начало обшего контейнера -->
-  <div class="b-container">
-    <!-- Начало header -->
-    <div class="header">
-      <div class="header__about">
-        <div class="header__about__title">
-          <h1>Заголовок страницы</h1>
-        </div>
 
-        <div class="header__about__description">
-          <p>
-            В отличие от пылевого и ионного хвостов, направление поступает
-            в лимногляциальный часовой угол 
-          </p>
-        </div>
+
+  <div class="main__container">
+    <div id="side" class="sidebar">
+      <div id="logo" class="sidebar__logo">
+        <img src="./assets/images/logo.png" alt="logo">
+      </div>
+      <div id="nav" class="nav__bar">
+        <ul>
+          <li><a href="/">Первая ссылка</a></li>
+          <li><a href="/">Вторая ссылка (активная)</a></li>
+          <li><a href="/">Третья ссылка</a></li>
+          <li><a href="/">Личный кабинет</a></li>
+          <li><a href="/">Выйти</a></li>
+        </ul>
       </div>
     </div>
-    <!-- Конец header -->
 
-    <!-- Начало header -->
-    <div class="main">
-      <div class="main__info">
-        <div class="main__info__to__pay">
-          <div class="main__info__to__pay__about">
-            Информация по оплате:
+    <!-- Начало обшего контейнера -->
+    <div class="b-container">
+      <!-- Начало header -->
+      <div class="header">
+        <div class="header__about">
+          <div class="header__about__title">
+            <h1>Заголовок страницы</h1>
           </div>
 
-          <div class="main__information__to__pay__count">
-            <div class="about__account">
-              Номер счета:
-            </div>
-            <div class="account">
-              87123658716587
-            </div>
+          <div class="header__about__description">
+            <p>
+              В отличие от пылевого и ионного хвостов, направление поступает
+              в лимногляциальный часовой угол 
+            </p>
           </div>
-
-          <div class="main__information__to__pay__value">
-            <div class="value__account">
-              Сумма платежа:
-            </div>
-            <div class="value">
-              100 руб.
-            </div>
-          </div>
-
-        </div>
-
-        <div class="bank__card__info">
-
-          <div class="bank__card__info__text">
-            Данные банковской карты
-          </div>
-
-          <div class="bank__card__info__input">
-            <div class="bank__card__info__input__container">
-
-              <div class="card__number">
-                Номер карты
-              </div>
-
-              <div class="input__areas">
-                <form action="/">
-                  <input type="number" id="quantity" name="quantity" min="1000" max="9999">
-                </form>
-                <form action="/">
-                  <input type="number" id="quantity" name="quantity" min="1000" max="9999">
-                </form>
-                <form action="/">
-                  <input type="number" id="quantity" name="quantity" min="1000" max="9999">
-                </form>
-                <form action="/">
-                  <input type="number" id="quantity" name="quantity" min="1000" max="9999">
-                </form>
-              </div>
-              
-
-              <div class="about__period">
-                Срок действия
-              </div>
-
-              <div class="input__areas_2">
-                <form action="/">
-                  <input class="day" type="number" id="quantity" name="quantity" min="1" max="31">
-                </form>
-                <form action="/">
-                  <input class="year" type="number" id="quantity" name="quantity" min="1900" max="2020">
-                </form>
-              </div>
-
-              <div class="card__taker">
-                <form action="/action_page.php">
-                  <input type="text" id="fname" name="fname"><br><br>
-                </form>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="absol">
-              <div class="second__card__container"></div>
-              <div class="code">
-                Код CVV2 / CVC2
-              </div>
-              
-              <form action="/">
-                <input type="number" id="quantity" name="quantity" min="1000" max="9999">
-                <img src="./assets/images/question.png" alt="qureston">
-              </form>
-          </div>
-
-          <div class="to__pay">
-            <button class="to__pay__paying">Оплатить</button>
-          </div>
-
         </div>
       </div>
-    </div>
-    <!-- Конец header -->
+      <!-- Конец header -->
 
-    <!-- Начало footer -->
-    <div class="footer">
-      <div class="footer__information">
-        <p>
+      <!-- Начало header -->
+      <div class="main">
+        <div class="main__info">
+          <div class="main__info__to__pay">
+            <div class="main__info__to__pay__about">
+              Информация по оплате:
+            </div>
+
+            <div class="main__information__to__pay__count">
+              <div class="about__account">
+                Номер счета:
+              </div>
+              <div class="account">
+                87123658716587
+              </div>
+            </div>
+
+            <div class="main__information__to__pay__value">
+              <div class="value__account">
+                Сумма платежа:
+              </div>
+              <div class="value">
+                100 руб.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bank__card__info">
+
+            <div class="bank__card__info__text">
+              Данные банковской карты
+            </div>
+
+            <div class="bank__card__info__input">
+              <div class="bank__card__info__input__container">
+
+                <div class="card__number">
+                  Номер карты
+                </div>
+
+                <div class="input__areas">
+                  <form action="/" id="cardInfo">
+                    <input placeholder="Num1" id="number_1" type="number" id="quantity" name="quantity" min="1000" max="9999">
+                    <input placeholder="Num2" id="number_2" type="number" id="quantity" name="quantity" min="1000" max="9999">
+                    <input placeholder="Num3" id="number_3" type="number" id="quantity" name="quantity" min="1000" max="9999">
+                    <input placeholder="Num4" id="number_4" type="number" id="quantity" name="quantity" min="1000" max="9999">
+                    <div class="about__period">
+                      Срок действия
+                    </div>
+                    <div class="days__select">
+                      <select id="day">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                      </select>
+                      
+                      <select id="year">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                      </select>
+
+                      
+                      <div class="hide__second__form">
+                        <div class="code">
+                          Код CVV2 / CVC2
+                        </div>
+                        <input placeholder="Code" id="code__hide" type="text" id="fname" name="fname">
+                        <img src="./assets/images/question.png" alt="qureston">
+                      </div>
+                    </div>
+                    
+                    <div class="card__taker">
+                        <input placeholder="Name" id="card__t" type="text" id="fname" name="fname">
+                    </div>
+                      
+                  </form>
+                </div>
+                
+
+              </div>
+            </div>
+
+            <div class="bank__card__info__code">
+                <div class="second__card__container"></div>
+                <div class="code">
+                  Код CVV2 / CVC2
+                </div>
+                
+                <div class="second__form">
+                  <form action="/">
+                    <input placeholder="Code" id="code__active" type="text" id="fname" name="fname">
+                    <img src="./assets/images/question.png" alt="qureston">
+                  </form>
+                </div>
+            </div>
+
+            <div class="bank__card__info__code__to__pay">
+              <button id="submit" class="bank__card__info__code__to__pay__paying" >Оплатить</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Конец header -->
+
+      <!-- Начало footer -->
+      <div class="footer">
+        <div class="footer__information">
           Исходя из астатической системы координат Булгакова, соединение стабильно. 
-          Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря,
-           ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
-          <br><br>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
-          <br><br>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
-          <br><br>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
-          Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, 
-          то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только 
-          первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, 
-          но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть 
-          на то, что такое волчок.
-        </p>
+            Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря,
+            ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+            <br><br>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+            <br><br>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+            <br><br>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
+            Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, 
+            то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только 
+            первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, 
+            но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть 
+            на то, что такое волчок.
+        </div>
       </div>
+      <!-- Конец footer -->
     </div>
-    <!-- Конец footer -->
+    <!-- Конец обшего контейнера -->
   </div>
-  <!-- Конец обшего контейнера -->
+
+  
 </body>
 
 </html>

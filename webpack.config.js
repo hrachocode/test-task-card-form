@@ -17,18 +17,19 @@ module.exports = {
                         exclude: '/node_modules/'
                   },
                   {
-                        test: /\.css$/,
+                        test: /\.(css|scss)$/,
                         loader: [
                               MiniCssExtractPlugin.loader,
                               {
                                     loader: 'css-loader',
                                     options: { importLoaders: 1 }
                               },
-                              'postcss-loader'
+                              'postcss-loader',
+                              'sass-loader'
                         ]
                   },
                   {
-                        test: /\.(png|svg|jpg|gif|woff2)$/,
+                        test: /\.(png|svg|jpg|gif|woff2|ttf|otf)$/,
                         loader: 'file-loader'
                   },
                   {
